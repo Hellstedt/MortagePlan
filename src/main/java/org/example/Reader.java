@@ -1,6 +1,8 @@
 package org.example;
 
 import java.io.*;
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Reader {
@@ -9,6 +11,7 @@ public class Reader {
         InputStream input = Reader.class.getResourceAsStream("/prospects.txt");
         if(input != null)
         {
+            ArrayList<String> lines = new ArrayList<String>();
             Scanner sc = new Scanner(input);
 
             sc.nextLine();
@@ -18,9 +21,10 @@ public class Reader {
                 if(line.equals("")){
                     break;
                 }
-                Extractor.extractData(line);
+                lines.add(line);
             }
             sc.close();
+            Extractor.extractData(lines);
         }
         else
         {
