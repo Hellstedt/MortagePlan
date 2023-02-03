@@ -6,12 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ac1ab165-c4b6-48dd-a9f1-927ad9e6f691" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Extractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Extractor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Loan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Loan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/LoanCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/LoanCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Reader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/LoanCalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/LoanCalculatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
