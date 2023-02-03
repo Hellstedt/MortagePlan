@@ -1,34 +1,30 @@
 package org.example;
 
 import org.junit.jupiter.api.Test;
-
-import java.awt.image.AreaAveragingScaleFilter;
-import java.util.ArrayList;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 class LoanCalculatorTest {
-
-    //Test for method LoanCalculator.CalculateLoan() 1580,2358243739930836098516767312
+    //Tests for method LoanCalculator.CalculateLoan()
     @Test
-    void TestLoanCalculator() {
-        ArrayList<Loan> loans = new ArrayList<Loan>();
-        loans.add(new Loan("Emily Davis", 250000, 6.5, 30));
-        assertEquals();
-
+    void ShouldReturnOneThousandFiveHundredEightyPointTwoThreeFiveEight() {
+        Loan loan = new Loan(1, "Emily Davis", 250000, 6.5, 30);
+        assertEquals(1580.2358, LoanCalculator.CalculateLoan(loan), 0.1);
+    }
+    @Test
+    void ShouldReturnThreeHundredSixteenPointFiveNineOneZero() {
+        Loan loan = new Loan(2, "Peter Davis", 7000, 8, 2);
+        assertEquals(316.5910, LoanCalculator.CalculateLoan(loan), 0.1);
     }
 
-    //Test for method LoanCalculator.CalculateExponent()
+    //Tests for method LoanCalculator.CalculateExponent()
     @Test
-    void ShouldReturnSixtyFour() {
-
-        assertEquals(64, LoanCalculator.TestCalculatePowerOf(2,6));
+    void ShouldReturnSixtyFour()
+    {
+        assertEquals(64, LoanCalculator.GetPowerOf(2,6));
     }
-
-    //Test for method LoanCalculator.CalculateExponent()
     @Test
-    void ShouldReturnFifteenPointSixTwoFive() {
-
-        assertEquals(15.625, LoanCalculator.TestCalculatePowerOf(2.5,3));
+    void ShouldReturnFifteenPointSixTwoFive()
+    {
+        assertEquals(15.625, LoanCalculator.GetPowerOf(2.5,3));
     }
 }

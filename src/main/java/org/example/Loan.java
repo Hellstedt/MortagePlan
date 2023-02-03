@@ -2,15 +2,14 @@ package org.example;
 
 public class Loan {
 
+    private int prospectNumber;
     private String name;
-
     private double totalLoan;
-
     private double interest;
-
     private int years;
 
-    public Loan(String name, double totalLoan, double interest, int years){
+    public Loan(int prospectNumber, String name, double totalLoan, double interest, int years) {
+        this.prospectNumber = prospectNumber;
         this.name = name;
         this.totalLoan = totalLoan;
         this.interest = interest;
@@ -21,6 +20,7 @@ public class Loan {
         System.out.println("Name: " + name + " Total Loan: " + totalLoan + " interest: " + interest + " years: " + years);
     }
 
+    public int GetProspectNumber() { return prospectNumber; }
     public String GetName(){
         return name;
     }
@@ -33,5 +33,4 @@ public class Loan {
     public int GetYears(){
         return years;
     }
-
 }

@@ -1,22 +1,19 @@
 package org.example;
 
 import java.io.*;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Reader {
-    public static void readFile() {
-
+public class Reader
+{
+    public static ArrayList<String> readFile() throws FileNotFoundException {
         InputStream input = Reader.class.getResourceAsStream("/prospects.txt");
-        if(input != null)
-        {
+        if(input != null) {
             ArrayList<String> lines = new ArrayList<String>();
             Scanner sc = new Scanner(input);
 
             sc.nextLine();
-            while (sc.hasNextLine())
-            {
+            while (sc.hasNextLine()) {
                 String line = sc.nextLine();
                 if(line.equals("")){
                     break;
@@ -24,11 +21,11 @@ public class Reader {
                 lines.add(line);
             }
             sc.close();
-            Extractor.extractData(lines);
+            return lines;
         }
         else
         {
-            System.out.println("File not found");
+            throw new FileNotFoundException("File not found");
         }
     }
 }
