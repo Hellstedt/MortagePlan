@@ -12,5 +12,5 @@ run the command `mvn test`
 run the command `mvn exec:java`
 
 ## OR use the included wrapper:
-If you dont have Maven installed you can use the maven weapper instead. To do this just follow
+If you don't have Maven installed you can use the maven weapper instead. To do this just follow
 the same procedure as above but add "w" to all commands, e.g. 'mvnw compile'
